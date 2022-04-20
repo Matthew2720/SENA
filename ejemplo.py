@@ -1,0 +1,5 @@
+print("ALGORITMO SUMA")
+v1 = int(5)
+v2 = int(20)
+suma=int(v1+v2)
+print(f"El resultado de la suma {suma}")
