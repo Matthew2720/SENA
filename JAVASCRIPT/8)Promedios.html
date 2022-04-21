@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let nombreEstudiante, promedio, n1, n2, n3,notaFinal
+            alert("Programa para calcular el promedio del estudiante")
+            for (let i = 1; i <=3; i++) {
+            
+            nombreEstudiante= (prompt ("Escriba el nombre del estudiante"))
+            n1=parseInt(prompt ("Digite la primera nota"))
+            n2=parseInt(prompt ("Digite la segunda nota"))
+            n3=parseInt(prompt ("Digite la tercera nota"))
+
+            alert("El estudiante " + nombreEstudiante + " tiene las siguientes notas :"+
+            "\n" + n1 + "\n" + n2 + "\n" + n3) 
+            
+            n1=(n1*0.3)
+            n2=(n2*0.3)
+            n3=(n3*0.4)
+            notaFinal=n1+n2+n3
+            promedio = parseInt(notaFinal/3)
+
+            alert("Su nota final es de " + notaFinal + "\n Su promedio es de " + promedio)
+            }
+        </script>
+    </body>
+</html>

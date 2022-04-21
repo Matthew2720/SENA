@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Mateo Hernandez</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;}
+
+        body{
+            background-color: black;
+            color: white;
+            font-size: 40px;
+            position: relative;
+            left: 300px;
+        }
+        #boton {
+            background-color: white;
+            color: black;
+            height: 50px;
+            width:100px;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        let Ubicacion = 0, C = 0, DR=0, Dev = 0,TP = 0;VT = 0;
+        let Ventas = [];
+        let Cantidad = [10,20,8,10,12,15,7,12,9];
+        let Producto=['Mekato Limon','Galletas Festival','Gansito','Chocorramo','Malta','Bombombun','Snickers','Smirnoff','Cocacola']
+        let Codigo = ['C1','C2','C3','P4','P5','P6','K7','K8','K9']
+        let Precio=[1200,600,800,2000,1700, 400, 1000,8000, 2300]
+        
+
+    
+        for (let i = 0; i < Producto.length; i++) {
+            document.write(Producto[i] + ' codigo '+ Codigo[i] + '     precio '+Precio[i]+'<br>')
+        }
+
+        function comprar(){
+            Ubicacion = Codigo.indexOf(prompt('Escriba el codigo del producto'))
+            C = prompt('Cuantos quieres comprar?');
+            DR = prompt('Con cuanto dinero vas a pagar?')
+
+            if (C<=Cantidad[Ubicacion]) {
+               TP=C*Precio[Ubicacion]
+                if (DR>=TP)
+                {
+                    alert("Entregando productos")
+                    Cantidad[Ubicacion]=Cantidad[Ubicacion]-C
+                    let Dev=DR-TP
+                    alert("Su devuelta es de: " + Dev)
+                    Ventas.push("Venta de " + C + " " +  Producto[Ubicacion] + " Valor de la venta " + TP )
+                    VT = VT + TP
+                }else{
+                    alert("Dinero insuficiente para realizar la compra")
+                }
+            }else{
+                alert("No tenemos esa cantidad :)")
+            }}
+
+        function Mostrarventas(){
+        
+        for (let registro = 0; registro < Ventas.length; registro++) 
+        {
+            document.write(Ventas[registro] + "<br>")
+        }
+        document.write('Venta total ' +VT)
+    }
+
+
+    </script>
+    <button id="boton" onclick="comprar()">Comprar</button>
+    <button id="boton" onclick="Mostrarventas()">Registro</button>
+</body>
+</html>

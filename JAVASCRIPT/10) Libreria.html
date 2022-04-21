@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <title>Libreria</title>
+</head>
+    <h1>Libreria</h1>
+<body>
+    <!-- En una librería se venden artículos con las siguientes condiciones: Sí el cliente es de tipo 1
+se le descuenta 30%Sí el cliente es de tipo 2 se le descuenta 20%Sí el cliente es de tipo 3 se
+le descuenta 10%Escribir un algoritmo que lea el nombre del cliente, tipo de cliente,
+precio. Calcule el pago final. -->
+<script>
+    let tipoCliente,nombreCliente,precioL,precioF;
+    nombreCliente = (prompt("Introduzca el nombre del cliente"));
+    tipoCliente = parseInt(prompt("Introduzca si el cliente es tipo \n 1 \n 2 \n 3"));
+    precioL = parseInt(prompt("Introduzca el precio del libro"));
+    
+    if(tipoCliente==1){
+        precioF=precioL*0.7
+    }
+    if(tipoCliente==2){
+        precioF=precioL*0.8
+    }
+    if(tipoCliente==3){
+        precioF=precioL*0.9
+    }
+    document.write("El valor del libro para  "+ nombreCliente+ " es $"+ precioF)
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Suponga que tiene una tienda y desea registrar sus ventas por medio de
+una computadora. Diseñe un algoritmo y que capture de cada cliente:
+a) El monto de la venta
+b) Calcule e imprima el IVA (19%)
+c) Calcule e imprima el total a pagar
+d) Capture la cantidad con que paga el cliente   
+e) Calcule y muestre el cambio (las devueltas)
+Al final del día deberá imprimir la cantidad de dinero que debe haber en la
+caja. -->
+<h1>Esta es la caja 1 :)</h1>
+<script>
+    let venta, iva = 0.19, totalP, cantidadR, devuelta,iva2,acumulador=0,ciclo="a";
+    
+    while(ciclo != "exit"){
+    venta = parseInt(prompt("Ingrese el valor total de los productos a facturar"));
+    cantidadR = parseInt(prompt("Ingrese el valor recibido del cliente"));
+    acumulador = acumulador + venta;
+    iva2 = (venta * iva);
+    totalP = venta + iva2;
+    if(cantidadR >= totalP){
+        devuelta = cantidadR - totalP;
+        alert("El iva es de $"+ iva2+"\n el total a pagar es de $ " + totalP + "\n la devuelta es de $"+ devuelta);
+    }else{
+        alert("La cantidad de dinero recibida no alcanza para realizar la compra.");
+        devuelta = cantidadR;
+    };
+    ciclo=(prompt("Escriba exit para salir, 'a' para continuar"))
+    }
+   
+    document.write("La cantidad de dinero que debe haber en caja es $ " + acumulador);
+
+</script>
+    
+</body>
+</html>

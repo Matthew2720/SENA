@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <title>Numeros Reales</title>
+</head>
+<body>
+    <h1> la introducción de 2 números reales y una operación (+, -, *, /), y mostrar por
+pantalla el resultado de la operación introducida.</h1>
+
+<script>
+    let n1, n2,operador, resultado
+    n1 = parseInt(prompt("Introduce el primer numero a operar"))
+    n2 = parseInt(prompt("Introduce el segundo numero a operar"))
+    operador = parseInt(prompt("Introduce la operacion que deseas realizar asi \n 1 - SUMA, \n 2 - RESTA, \n 3 -MULTIPLICACION, \n 4 - DIVISION"))
+    if(operador == 1)
+    { resultado = n1 + n2};
+    if(operador == 2)
+    { resultado = n1 - n2};
+    if(operador == 3)
+    { resultado = n1 * n2};
+    if(operador == 4)
+    { resultado = n1 / n2};
+    document.write("El resultado de la operacion es " + resultado)
+
+
+</script>
+</body>
+</html>

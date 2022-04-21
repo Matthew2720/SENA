@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEO HERNANDEZ</title>
+</head>
+<body>
+    <script>
+
+       let nota, nombre, notaMaxima=0, nombreMayor, sumador=0,promedio, notaMinima=10, nombreMenor, estudiantes = 1;
+
+    while (estudiantes <= 3) {
+    nombre=prompt("Introduzca su nombre: ")
+    nota=parseFloat(prompt("Introduzca la nota: "))
+        if(notaMaxima<nota){
+            notaMaxima=nota
+            nombreMayor=nombre
+        }
+        if(notaMinima>nota){
+            notaMinima=nota
+            nombreMenor=nombre
+        }
+        sumador=sumador+nota
+        estudiantes++;
+        
+    }
+    promedio=sumador/10
+    alert ("El estudiante "+nombreMayor+" tiene la nota mayor de "+notaMaxima)
+    alert ("El estudiate "+nombreMenor+" tiene la nota menor de "+notaMinima)
+    alert("el promedio es de "+ promedio)
+    </script>
+    
+</body>
+</html>

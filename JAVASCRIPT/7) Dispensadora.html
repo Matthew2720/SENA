@@ -1,0 +1,79 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+             let cProducto, vPagar;
+
+             cProducto= prompt ("Introduzca el códi5 del producto: \n 1:Galletas Waffer, $1.500 \n 2:Mini Chips, $1.600 \n 3:Papas de Limón, $2.500 \n 4:Chocorramo, $1.800 \n 5:Galletas Oreo , $900" )
+             vPagar=parseFloat(prompt ("Digite el valor con el que se va a cancelar"))
+            
+             if(cProducto == "1")
+                { 
+                    if(vPagar<1500)
+                    {
+                        alert("¡No le alcanza el dinero!")
+                    }
+                    else
+                    {
+                    alert("Dispensando Galletas Waffer ,vuelve cuando quieras !")
+                    alert("Su devuelta es de:"+ (vPagar-1500))
+                    }
+                } 
+
+                if(cProducto == "2")
+                { 
+                    if(vPagar<1600)
+                    {
+                        alert("¡No le alcanza el dinero!")
+                    }
+                    else
+                    {
+                    alert("Dispensando Mini Chips ! ,vuelve cuando quieras")
+                    alert("Su devuelta es de:"+ (vPagar-1600))
+                    }
+                } 
+                if(cProducto == "3")
+                { 
+                    if(vPagar<2500)
+                    {
+                        alert("¡No le alcanza el dinero!")
+                    }
+                    else
+                    {
+                    alert("Dispensando Papas de Limón ,vuelve cuando quieras !")
+                    alert("Su devuelta es de:"+ (vPagar-2500))
+                    }
+                } 
+                if(cProducto == "4")
+                { 
+                    if(vPagar<1800)
+                    {
+                        alert("¡No le alcanza el dinero!")
+                    }
+                    else
+                    {
+                    alert("Dispensando Chocorramo ,vuelve cuando quieras !")
+                    alert("Su devuelta es de:"+ (vPagar-1800))
+                    }
+                } 
+                if(cProducto == "5")
+                { 
+                    if(vPagar<900)
+                    {
+                        alert("¡No le alcanza el dinero!")
+                    }
+                    else
+                    {
+                    alert("Dispensando Galletas Oreo ,vuelve cuando quieras")
+                    alert("Su devuelta es de:"+ (vPagar-900))
+                    }
+                } 
+               
+                
+            
+
+        </script>
+    </body>
+</html>

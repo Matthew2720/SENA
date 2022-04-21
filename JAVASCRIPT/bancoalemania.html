@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Alemania Mateo Hdez</title>
+</head>
+<body>
+    <script>
+        let retiro,consignacion,condicional = "si",cuenta = 500000;
+        
+
+    while (condicional=="si") {
+
+    let pregunta = parseInt(prompt("¿que deseas hacer:\npara retirar 1 \npara consignar 2 \npara saldo 3"))
+     
+        if (pregunta == "1")//retiro
+    {
+        retiro = parseFloat(prompt("ingrese la cantidad que desea retirar"))
+        if(retiro<cuenta){
+           cuenta=cuenta-retiro
+           alert("¡retiro con exito!")
+        }else{
+            alert("El retiro no es exitoso, el dinero en cuenta no alcanza.")
+        }
+        
+    }
+    if(pregunta == "2")//consignacion
+    {
+        consignacion = parseFloat(prompt("ingrese la cantidad que desea consignar"))
+          cuenta=cuenta+consignacion
+        alert("¡consignacion con exito!")
+    }    
+
+    if(pregunta==3)//Consulta saldo
+    {
+        alert("Su saldo es " + cuenta);
+    }
+
+    }
+    </script>
+</body>
+</html>

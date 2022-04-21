@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>     
+    <body>
+        <script>
+            let meses, precioCompra, diferenciaDescuento
+            precioCompra = parseFloat(prompt ("Introduzca el valor de la compra"))
+            meses = prompt ("Que mes esta comprando?")
+            
+
+            if (meses== "octubre" || meses== "septiembre" ||  meses== "marzo"||meses == "3"||meses== "10"||meses=="9")
+            {
+                diferenciaDescuento = (precioCompra * 0.15)
+                document.write (" El pago que debe hacer es de  " + (precioCompra - diferenciaDescuento))
+            }else{
+                document.write (" El pago que debe hacer es de  " + precioCompra)
+
+            }
+            
+        </script>
+    </body>
+</html>

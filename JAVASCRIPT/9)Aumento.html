@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUMENTO</title>
+</head>
+
+<body>
+    <script>
+        let categoria, sueldo, aumento, sueldoN
+        sueldo = parseInt(prompt("Ingresa tu salario"))
+        categoria = parseInt(prompt("Ingrese la categoria \n 1 - NOOB \n 2 - MEDIUM \n 3- PRO"))
+        if (categoria == 1) { aumento = 1.02 }
+        else {
+            if (categoria == 2) {
+                aumento = 1.02
+            }
+            else {
+                if (categoria == 3) {
+                    aumento = 1.2
+                }
+
+            }
+        }
+        document.write("El nuevo salario del trabajador es " + (sueldo * aumento))
+
+
+    </script>
+</body>
+
+</html>
