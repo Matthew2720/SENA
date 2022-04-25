@@ -16,9 +16,9 @@
 
     //Mezclando cadenas con enteros
 
-    echo "$horas $H equivalen a : ".($horas.60)." ".$M."<br>";
+    echo "$horas $H equivalen a : ".($horas*60)." ".$M."<br>";
 
-    echo "$horas $H equivalen a : ".($horas.3600)." ".$S."<br>";
+    echo "$horas $H equivalen a : ".($horas*3600)." ".$S."<br>";
 
 ?>
 </body>

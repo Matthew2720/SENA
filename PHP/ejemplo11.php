@@ -11,7 +11,7 @@
     $Mensaje="Hola mundo SOY :";
     $nombre=" APRENDIZ SENA , ";
     $string=" Tengo ";
-    SEdad=20;
+    $Edad=20;
     $string2: " Años !!!!  ";
     echo $Mensaje.'<b>'.$nombre.'</b>'$string.$Edad.$string2;
 ?>

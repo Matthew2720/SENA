@@ -33,7 +33,7 @@
     $texto3=$texto1." y ".texto2;
 
     print "$texto3<br>";
-    echo "La cantidad de palabras de la cadena ($texto3) es : "str_word_count($texto3).'<br>';
+    echo "La cantidad de palabras de la cadena ($texto3) es : ".str_word_count($texto3).'<br>';
 
 ?>
 </body>
