@@ -17,7 +17,7 @@
 
     $suma=($a+$b+$c+$d);
     $resta=($a-$b-$c-$d);
-    $producto($a*$b*$c*$d);
+    $producto=($a*$b*$c*$d);
     $media=($a+$b+$c+$d)/4;
     $potenciacion=($a**$b);
     $modulo=($b%$a);
@@ -28,15 +28,7 @@
     print "La media aritmetica de los numeros es : <b>$media</b><br>";
     print "La potenciacion de los numeros es : <b>$potenciacion</b><br>";
     print "El resultado de la operacion modulo es : <b>$modulo</b><br>";
-
-
-
-
-
-
-
-
-
+    
 ?>
 </body>
 </html>
