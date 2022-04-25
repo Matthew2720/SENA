@@ -7,9 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        echo("Hola mundo! Este es mi primer script en PHP");
-    ?>
-    
+<?php
+    $var1 = 10;
+    $var2 = 20;
+    $suma = $var1 + $var2;
+
+    echo $suma;
+?>
 </body>
 </html>
